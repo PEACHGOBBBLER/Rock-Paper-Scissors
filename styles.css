@@ -58,8 +58,9 @@ html, body {
 .opponent {
     right: 0px;
     width: 25rem;
-    /*border: 5px solid magenta;*/
     margin-bottom: -50px;
+    border: 5px solid magenta;
+    /*opacity: 0;*/
 }
 
 .wrapperOne {
@@ -71,20 +72,24 @@ html, body {
 .arena {
     margin-top: -200px;
     width: 50rem;
-    /*border: 5px solid magenta;*/
+    border: 5px solid magenta;
+    /*opacity: 0;*/
 }
 .wrapperTwo {
     z-index: 1;
     display: table;
     margin: 0 auto;
+
 }
 
 .player {
 
-    /*border: 5px solid magenta;*/
     width: 50rem;
-    margin-top: -600px;
+    margin-top: -800px;
+    margin-left: -150px;
     margin-bottom: -100px;
+    border: 5px solid magenta;
+    /*opacity: 0;*/
 }
 .wrapperThree {
     z-index: 3;
@@ -92,16 +97,16 @@ html, body {
 
 .buttons {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 50%;
-    /*border: 5px solid magenta;*/
-    justify-content: center;
-    margin-left: 450px;
-    margin-top: -200px;
+    border: 5px solid magenta;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: -250px;
 }
 #choice {
     width: 20rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: #446ad1;
     font-size: 20px;
 
