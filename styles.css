@@ -1,0 +1,22 @@
+.border {
+    border-top: 120px solid black;
+    border-bottom: 120px solid black;
+    border-left: 300px solid black;
+    border-right: 300px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playArea {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid magenta;
+
+}
+
+.title {
+    padding: 10px;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
