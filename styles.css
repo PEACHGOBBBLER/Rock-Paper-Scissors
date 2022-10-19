@@ -1,6 +1,9 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+}
+
 .border {
-    border-top: 120px solid black;
-    border-bottom: 120px solid black;
     border-left: 300px solid black;
     border-right: 300px solid black;
     display: flex;
@@ -10,13 +13,96 @@
 
 .playArea {
     display: flex;
+    padding: 30px 0px;
+    width: 100%;
     flex-direction: column;
     border: 5px solid magenta;
 
 }
 
+
+
 .title {
+    display: flex;
+    justify-content: space-around;
     padding: 10px;
     font-size: 25px;
     font-family:Arial, Helvetica, sans-serif;
+    /*border: 5px solid magenta;*/
+}
+
+#titleText {
+    text-shadow: 1px 1px 10px #446ad1;
+    color: rgb(112, 112, 112);
+    box-shadow: 2px 2px grey;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    /*border: 5px solid magenta;*/
+}
+
+#scores {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.sprites {
+    display: flex;
+    flex-direction: column;
+}
+
+.opponent {
+    right: 0px;
+    width: 25rem;
+    /*border: 5px solid magenta;*/
+    margin-bottom: -50px;
+}
+
+.wrapperOne {
+    z-index: 2;
+    display: table;
+    margin: 0px 350px;
+}
+
+.arena {
+    margin-top: -200px;
+    width: 50rem;
+    /*border: 5px solid magenta;*/
+}
+.wrapperTwo {
+    z-index: 1;
+    display: table;
+    margin: 0 auto;
+}
+
+.player {
+
+    /*border: 5px solid magenta;*/
+    width: 50rem;
+    margin-top: -600px;
+    margin-bottom: -100px;
+}
+.wrapperThree {
+    z-index: 3;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    /*border: 5px solid magenta;*/
+    justify-content: center;
+    margin-left: 450px;
+    margin-top: -200px;
+}
+#choice {
+    width: 20rem;
+    margin-bottom: 10px;
+    background-color: #446ad1;
+    font-size: 20px;
+
 }
