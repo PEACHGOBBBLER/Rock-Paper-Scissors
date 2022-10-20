@@ -59,8 +59,10 @@ html, body {
     right: 0px;
     width: 25rem;
     margin-bottom: -50px;
+    margin-left: -200px;
     border: 5px solid magenta;
-    /*opacity: 0;*/
+    animation: ease-right 1s ease-in forwards;
+    opacity: 0;
 }
 
 .wrapperOne {
@@ -73,7 +75,8 @@ html, body {
     margin-top: -200px;
     width: 50rem;
     border: 5px solid magenta;
-    /*opacity: 0;*/
+    animation: ease-opacity 1.5s cubic-bezier(0.25, 0.1, 0.71, 1.12) forwards;
+    opacity: 0;
 }
 .wrapperTwo {
     z-index: 1;
@@ -86,10 +89,11 @@ html, body {
 
     width: 50rem;
     margin-top: -800px;
-    margin-left: -150px;
-    margin-bottom: -100px;
+    margin-bottom: -30px;
+    margin-left: 100px;
     border: 5px solid magenta;
-    /*opacity: 0;*/
+    opacity: 0;
+    animation: ease-left 1s cubic-bezier(0.25, 0.1, 0.71, 1.12) forwards;
 }
 .wrapperThree {
     z-index: 3;
@@ -110,4 +114,26 @@ html, body {
     background-color: #446ad1;
     font-size: 20px;
 
+}
+
+/*Keyframes*/
+
+@keyframes ease-left {
+    100% {
+        opacity: 100%;
+        transform: translateX(-35%);
+    }
+}
+
+@keyframes ease-right {
+    100% {
+        opacity: 100%;
+        transform: translateX(55%);
+    }
+}
+
+@keyframes ease-opacity {
+    100% {
+        opacity: 100%;
+    }
 }
