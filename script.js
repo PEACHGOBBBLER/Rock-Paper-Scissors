@@ -3,7 +3,7 @@ let computerScore = 0;
 const rock = document.getElementsByClassName("rockTwo");
 const paper = document.getElementsByClassName("paperTwo");
 const scissors = document.getElementsByClassName("scissorsTwo");
-const choice = document.getElementsByClassName("buttons")
+const choice = 
 
 
 
@@ -14,8 +14,8 @@ function getComputerChoice() {
 }
 
 function battleBox() {
-    if (choice.addEventListener("click", "")) {
-        
+    if (document.getElementsByClassName("buttons").addEventListener("click")) {
+        document.getElementsByClassName("battleBox").style.visibility ="visible";
     }
 }
 
