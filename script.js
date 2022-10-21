@@ -1,8 +1,9 @@
-const rock = "rock";
-const paper = "paper";
-const scissors = "scissors";
 let playerScore = 0;
 let computerScore = 0;
+const rock = document.getElementsByClassName("rockTwo");
+const paper = document.getElementsByClassName("paperTwo");
+const scissors = document.getElementsByClassName("scissorsTwo");
+const choice = document.getElementsByClassName("buttons")
 
 
 
@@ -12,21 +13,11 @@ function getComputerChoice() {
     return choice.toString();
 }
 
-function getPlayerChoice() {
-    let playerChoice = prompt("Rock, Paper, Scissors, SHOOT: ");
-    switch(playerChoice.toLowerCase()) {
-        case rock.toLowerCase().toString():
-            return "You chose rock";
-        case paper.toLowerCase().toString():
-            return "You chose paper";
-        case scissors.toLowerCase().toString():
-            return "You chose scissors";
-        default:
-            return "Not an option";
+function battleBox() {
+    if (choice.addEventListener("click", "")) {
+        
     }
 }
-
-
 
 function playRound() {
     playerSelection = getPlayerChoice(); /* Causes issues with if function below. Replace with "rock" for testing*/
