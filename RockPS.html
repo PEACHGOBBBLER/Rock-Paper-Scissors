@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,35 +31,11 @@
                 <img class="player" src="/Sprites/PlayerOne.png">
             </div>
             <div class="buttons">
-                <button style="width:40%" class="rockTwo" id="choice" type="button" onclick="battle()">ROCK</button>
-                <button style="width:42%" class="paperTwo" id="choice" type="button" onclick="battle()">PAPER</button>
-                <button style="width:45%" class="scissorsTwo" id="choice" type="button" onclick="battle()">SCISSORS</button>
-            </div>
-            <div id="battleBox">
-                <p id="battleText">ROCK,  PAPER,  SCISSORS,  SHOOT:</p>
-                <div class="battle"></div>
+                <button style="width:40%" class="rockTwo" id="choice" type="button" onclick="playRound()">ROCK</button>
+                <button style="width:42%" class="paperTwo" id="choice" type="button" onclick="playRound()">PAPER</button>
+                <button style="width:45%" class="scissorsTwo" id="choice" type="button" onclick="playRound()">SCISSORS</button>
             </div>
         </div>
     </div>
-    <script>
-        /*
-        let playerScore = 0;
-        let computerScore = 0;
-        const rock = document.getElementsByClassName("rockTwo");
-        const paper = document.getElementsByClassName("paperTwo");
-        const scissors = document.getElementsByClassName("scissorsTwo");
-        const battleBox = document.getElementById("battleBox");
-
-        function getComputerChoice() {
-        let choices = [rock, paper, scissors];
-        let choice = choices[Math.floor(Math.random() * choices.length)]; 
-        return choice.toString();
-        }
-
-        //open battleBox on click
-        function battle() {
-            battleBox.style.visibility = "visible";
-        } */
-    </script>
 </body>
 </html>
