@@ -59,7 +59,7 @@ html, body {
 .score {
     width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 15px;
     font-family:Arial sans-serif;
     border: double black;
@@ -71,12 +71,31 @@ html, body {
 
 }
 
-#scores {
+.scoresOne {
     padding-left: 5rem;
     padding-right: 5rem;
+    border: 2px solid magenta;
+}
+.scoresTwo {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: 2px solid magenta;
 }
 
+
 /*PLAYERS*/
+
+#shitTalk {
+    text-align: center;
+    width: 20%;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    margin-left: 35rem;
+    border-radius: 20px;
+    border: 1px dotted black;
+    visibility: hidden;
+}
+
 
 .sprites {
     display: flex;

@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,8 +17,11 @@
                 <p id="titleText" class="shoot">SHOOT!</p>
             </div>
             <div class="score">
-                <p id="scores">Player's Score:</p>
-                <p id="scores">Opponent's Score:</p>
+                <p id="scoresOne">Player's Score: <p id="playerScore">0</p></p>
+                <p id="scoresTwo">Opponent's Score: <p id="computerScore">0</p></p>
+            </div>
+            <div id="shitTalk">
+                <div id="shitBox">Damn, you suck.</div>
             </div>
             <div class="wrapperOne">
                 <img class="opponent" src="/Sprites/Opponent.png">
@@ -28,7 +30,7 @@
                 <img class="arena" src="/Sprites/Arena.png">
             </div>
             <div class="wrapperThree">
-                <img class="player" src="/Sprites/PlayerOne.png">
+                <img class="player" id="playerAnim" src="/Sprites/PlayerOne.png">
             </div>
             <div class="buttons">
                 <button style="width:40%" id="rock" class="choice" type="button" value="rock" onclick="playRound('rock')">ROCK</button>
@@ -37,5 +39,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
