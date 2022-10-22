@@ -3,7 +3,6 @@ const computerPaper = "paper";
 const computerScissors = "scissors";
 let playerScore = document.getElementById("playerScore")
 let computerScore = document.getElementById("computerScore");
-let shitTalk = document.getElementById("shitTalk");
 
 
 function getComputerChoice() {
@@ -15,9 +14,6 @@ function getComputerChoice() {
 
 function playRound(val) {
     
-
-
-
     let playerSelection = val;
     computerSelection = getComputerChoice();
     alert(`You chose ${playerSelection}.\nYour opponent chose ${computerSelection}.`); 
@@ -36,15 +32,17 @@ function playRound(val) {
         computerScore.innerText = Number(computerScore.innerText) + 1;
     }
 
-    if (computerScore.innerText > 3 && playerScore < 3) {
-        shitTalk.style.visibility = "visible";
-    }
-
     if (playerScore.innerText == 5) {
         alert("You've won the game!");
+        document.getElementById("rock").disabled = true;
+        document.getElementById("paper").disabled = true;
+        document.getElementById("scissors").disabled = true;
         return;
     } else if (computerScore.innerText == 5) {
         alert("You've lost the game.");
+        document.getElementById("rock").disabled = true;
+        document.getElementById("paper").disabled = true;
+        document.getElementById("scissors").disabled = true;
         return;
     }
 
